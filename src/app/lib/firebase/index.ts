@@ -1,16 +1,18 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth"
+
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
-  authDomain: process.env.AUTH_DOMAIN,
-  databaseURL: process.env.DATABASE_URL,
-  projectId: process.env.PROJECT_ID,
-  storageBucket: process.env.STORAGE_BUCKET,
-  messagingSenderId: process.env.MESSAGING_SENDER,
-  appId: process.env.APP_ID,
-  measurementId: process.env.MEASUREMENT_ID
+  apiKey: "AIzaSyBvKfuxpA6ecz3eOBMfzDr6BxVMHgfTicc",
+  authDomain: "chaldal-dbaa5.firebaseapp.com",
+  databaseURL: "https://chaldal-dbaa5-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "chaldal-dbaa5",
+  storageBucket: "chaldal-dbaa5.appspot.com",
+  messagingSenderId: "763517665848",
+  appId: "1:763517665848:web:a7da6316b8435f6e971ccd",
+  measurementId: "G-6386Y0VYJY"
 };
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
