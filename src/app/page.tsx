@@ -1,9 +1,9 @@
-import Drawer from '@/components/sidebar/sidebar.component'
+import SignIn from '@/components/sign-in/sign-in.component';
 
 export default function Home() {
   return (
     <main>
-      <Drawer />
+      <SignIn />
     </main>
   )
 }
