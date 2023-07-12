@@ -6,8 +6,17 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary-90:rgb(0, 179, 255);
+  --primary-100:rgb(0, 169, 242);
+  --secondary-100:rgb(32, 33, 33);
+  --secondary-90:rgb(50, 50, 50);
+  --secondary-80:rgb(45, 48, 49);
+  --secondary-70:rgb(47, 51, 53);
 }
-
+*{
+  font-family: "Poppins";
+  color: var(--secondary-100);
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -18,10 +27,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+main{
+  height: 100%;
 }
