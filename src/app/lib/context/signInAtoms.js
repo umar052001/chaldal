@@ -1,10 +1,12 @@
+"use client"
 import {atom} from "jotai"
 
-const usernameAtom=atom("");
-const passwordAtom=atom("");
-
+const usernameAtom = atom("");
+const passwordAtom = atom("");
+const isLoggedInAtom = atom(false);
 
 export {
     usernameAtom,
-    passwordAtom
+    passwordAtom,
+    isLoggedInAtom
 }
