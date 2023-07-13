@@ -1,4 +1,7 @@
-"use client"
+/**
+ * Component for user sign-in using Firebase authentication.
+ * @returns {JSX.Element} Sign-in form.
+ */
 import cls from "classnames";
 import Image from "next/image";
 import styles from "./sign-in.module.css";
@@ -8,21 +11,30 @@ import { useAtom } from "jotai"
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "@/app/lib/firebase";
 
-
 const SignIn: React.FC = () => {
     const router = useRouter();
     const [username, setUserName] = useAtom(usernameAtom);
     const [password, setPassword] = useAtom(passwordAtom);
+
+    /**
+     * Handles the sign-in form submission.
+     * @param {React.FormEvent} e - The form event.
+     */
     const handleSignIn = async (e: React.FormEvent) => {
         e.preventDefault();
         try {
             await signInWithEmailAndPassword(auth, username, password);
             router.push("/dashboard");
-            console.log("signed in success")
+            console.log("signed in success");
         } catch (error) {
             console.error("Sign-in error:", error);
         }
-    }
+    };
+
+    /**
+     * Handles the input change event.
+     * @param {React.FormEvent<HTMLInputElement>} e - The input event.
+     */
     const handleOnChangeInput = (e: React.FormEvent<HTMLInputElement>) => {
         const name = (e.target as HTMLInputElement).name;
         const value = (e.target as HTMLInputElement).value;
@@ -33,7 +45,6 @@ const SignIn: React.FC = () => {
             setPassword(value);
         }
     };
-
 
     return (
         <div className={styles.signInContainer}>
@@ -57,6 +68,6 @@ const SignIn: React.FC = () => {
             </div>
         </div>
     );
-};
+}
 
 export default SignIn;

@@ -1,4 +1,3 @@
-
 import {atom} from "jotai"
 
 const usernameAtom=atom("");
