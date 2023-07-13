@@ -6,12 +6,12 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --primary-90:rgb(0, 179, 255);
-  --primary-100:rgb(0, 169, 242);
-  --secondary-100:rgb(32, 33, 33);
-  --secondary-90:rgb(50, 50, 50);
-  --secondary-80:rgb(45, 48, 49);
-  --secondary-70:rgb(47, 51, 53);
+  --primary-100:#1c8f67;
+  --primary-90:#2fa47b;
+  --secondary-100:#141414;
+  --secondary-90:#2b312f;
+  --secondary-80:#363f3c;
+  --secondary-70:#454b49;
 }
 *{
   font-family: "Poppins";

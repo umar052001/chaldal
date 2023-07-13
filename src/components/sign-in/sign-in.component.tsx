@@ -1,3 +1,4 @@
+"use client"
 /**
  * Component for user sign-in using Firebase authentication.
  * @returns {JSX.Element} Sign-in form.
@@ -49,15 +50,17 @@ const SignIn: React.FC = () => {
     return (
         <div className={styles.signInContainer}>
             <div className={styles.subContainer}>
-                <Image src="/logo.png" alt="logo" width={150} height={100} />
+                <div className="flex justify-center my-3">
+                    <Image src="/logo.png" alt="logo" width={150} height={100} />
+                </div>
                 <form onSubmit={handleSignIn} className={cls("mb-10", styles.form)}>
                     <h2>Administrator Login</h2>
                     <div className={styles.inputbox}>
-                        <input type="email" onChange={handleOnChangeInput} name="username" className={styles.input} required />
-                        <span>Username</span>
+                        <input type="email" placeholder=" " onChange={handleOnChangeInput} name="username" className={styles.input} required />
+                        <span>Email</span>
                     </div>
                     <div className={styles.inputbox}>
-                        <input type="password" onChange={handleOnChangeInput} name="password" className={styles.input} required />
+                        <input type="password" placeholder=" " onChange={handleOnChangeInput} name="password" className={styles.input} required />
                         <span>Password</span>
                     </div>
                     <input type="submit" className={styles.submit} value="Login" required />
