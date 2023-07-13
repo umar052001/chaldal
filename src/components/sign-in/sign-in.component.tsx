@@ -17,8 +17,7 @@ const SignIn:React.FC = () => {
         router.push("/dashboard");
     }
     const handleOnChangeInput=(e:React.FormEvent<HTMLInputElement>)=>{
-        const name=e.target.name;
-        const value=e.target.value;
+        const {name,value}=e.target;
         if(name==="username"){
             setUserName(value);
         }else{
@@ -29,7 +28,7 @@ const SignIn:React.FC = () => {
         <div className={styles.signInContainer}>
             <div className={styles.subContainer}>
                 <div className="flex justify-center my-10 ">
-                    <Image src="/logo.png" alt="logo" width={150} height={100}/>
+                    <Image src="/static/logo.png" alt="logo" width={150} height={100}/>
                 </div>
                 <form onSubmit={handleSignIn} className={cls("mb-10",styles.form)}>
                     <h2>Administrator Login</h2>

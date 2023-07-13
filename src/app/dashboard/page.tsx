@@ -1,20 +1,12 @@
-"use client"
-import cls from "classnames";
-import Image from "next/image";
-// ign-in.module.css";
-import { useRouter } from "next/navigation";
+import Home from "@/components/home/home.component";
 
-const SignIn = () => {
-    const router=useRouter();
-    const handleSignIn=()=>{
-        router.push("/dashboard");
-    }
+const Dashboard = () => {
 
     return (
         <div>
-            Dashboard
+            <Home/>
         </div>
     );
 };
 
-export default SignIn;
+export default Dashboard;
