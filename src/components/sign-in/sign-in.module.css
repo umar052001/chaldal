@@ -89,6 +89,7 @@ img:hover {
 }
 
 .subContainer .inputbox input:focus ~ span,
+.subContainer .inputbox input:not(:placeholder-shown) ~ span,
 .subContainer .inputbox input:valid ~ span{
     transform:translateX(-10px) translateY(-23px);
     font-size: 0.8rem;
