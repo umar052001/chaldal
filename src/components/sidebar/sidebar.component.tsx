@@ -19,7 +19,6 @@ const Drawer = () => {
       optionRoute: "/dashboard/orders"
     },
     {
-<<<<<<< HEAD
       optionName:"Categories",
       id:3,
       optionIconUrl:"/static/icons/home.svg",
@@ -36,18 +35,6 @@ const Drawer = () => {
           subOptionTitle:"Manage Sub Categories",
           subOptionIconUrl:"/static/icons/home.svg",
           subOptionRoute:"/dashboard/subCategories",
-=======
-      optionName: "Option 1",
-      id: 3,
-      optionIconUrl: "/static/icons/home.svg",
-      optionRoute: "/dashboard",
-      subOptions: [
-        {
-          id: 1,
-          subOptionTitle: "subOption 1",
-          subOptionIconUrl: "/static/icons/home.svg",
-          subOptionRoute: "/dashboard",
->>>>>>> 4020362305e8828f6a8cdeeb8b93554d92103baa
         }
       ]
     },
