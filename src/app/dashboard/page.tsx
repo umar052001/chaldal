@@ -1,10 +1,14 @@
+"use client"
 import Home from "@/components/home/home.component";
+import { NextUIProvider } from '@nextui-org/react';
 
 const Dashboard = () => {
 
     return (
         <div>
-            <Home/>
+            <NextUIProvider>
+                <Home/>
+            </NextUIProvider>
         </div>
     );
 };

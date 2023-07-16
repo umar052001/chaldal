@@ -19,16 +19,22 @@ const Drawer = () => {
       optionRoute:"/dashboard/orders"
     },
     {
-      optionName:"Option 1",
+      optionName:"Categories",
       id:3,
       optionIconUrl:"/static/icons/home.svg",
-      optionRoute:"/dashboard",
+      optionRoute:"",
       subOptions:[
         {
           id:1,
-          subOptionTitle:"subOption 1",
+          subOptionTitle:"Manage Categories",
           subOptionIconUrl:"/static/icons/home.svg",
-          subOptionRoute:"/dashboard",
+          subOptionRoute:"/dashboard/categories",
+        },
+        {
+          id:2,
+          subOptionTitle:"Manage Sub Categories",
+          subOptionIconUrl:"/static/icons/home.svg",
+          subOptionRoute:"/dashboard/subCategories",
         }
       ]
     },
@@ -49,7 +55,7 @@ const Drawer = () => {
   ]
   return (
    <>
-      <div className={`bg-[var(--secondary-90)] fixed ${isDrawerOpen?"left-0 top-0":"left-[-208px] top-0"} h-[100vh] z-10 w-52 pt-16 inline-block transition-all duration-300`}>
+      <div className={`bg-[var(--secondary-90)]  fixed ${isDrawerOpen?"left-0 top-0":"left-[-208px] top-0"} h-[100vh] z-10 w-52 pt-16 inline-block transition-all duration-300`}>
         
         {
           drawerOptions.map((drawerItem)=>{
