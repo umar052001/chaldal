@@ -19,16 +19,22 @@ const Drawer = () => {
       optionRoute: "/dashboard/orders"
     },
     {
-      optionName: "Option 1",
-      id: 3,
-      optionIconUrl: "/static/icons/home.svg",
-      optionRoute: "/dashboard",
-      subOptions: [
+      optionName:"Categories",
+      id:3,
+      optionIconUrl:"/static/icons/home.svg",
+      optionRoute:"",
+      subOptions:[
         {
-          id: 1,
-          subOptionTitle: "subOption 1",
-          subOptionIconUrl: "/static/icons/home.svg",
-          subOptionRoute: "/dashboard",
+          id:1,
+          subOptionTitle:"Manage Categories",
+          subOptionIconUrl:"/static/icons/home.svg",
+          subOptionRoute:"/dashboard/categories",
+        },
+        {
+          id:2,
+          subOptionTitle:"Manage Sub Categories",
+          subOptionIconUrl:"/static/icons/home.svg",
+          subOptionRoute:"/dashboard/subCategories",
         }
       ]
     },
