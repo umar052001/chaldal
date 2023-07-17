@@ -3,7 +3,12 @@
 import CustomLink from "@/components/CustomLink/customLink";
 import Table from "@/components/table/CatTable.component";
 import AddCatModal from "@/components/modal/AddCatModal.component";
-
+type CategoryType = {
+    name?: string,
+    sub?: string,
+    avatar?: string,
+    items?:[]
+};
 const Management = () => {
     const handleAddCat=()=>{
         // TODO Add Category into the firebase
